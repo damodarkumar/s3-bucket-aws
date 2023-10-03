@@ -3,7 +3,7 @@ name: Invoke Terraform Worfklow
 on:
   workflow_dispatch:
     inputs:
-      bucketname:
+      bucket_name:
         description: S3 bucket name
         required: true
         default: 'platformengineerings3bucket031020231234'

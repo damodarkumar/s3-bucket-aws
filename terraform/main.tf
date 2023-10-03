@@ -8,6 +8,6 @@ resource "aws_s3_bucket" "platformengineering_bucket" {
   acl    = "private"
 
   tags = {
-    Name = var.bucketname
+    Name = var.bucket_name
   }
 }
