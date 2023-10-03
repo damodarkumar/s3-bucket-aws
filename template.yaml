@@ -1,0 +1,48 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: create-infra
+  title: Create infra
+  description: Create a new infra
+  tags:
+    - aws
+    - terraform
+spec:
+  owner: dhamu1010@gmail.com.com
+  type: website
+  parameters:
+    - title: Provide some simple information
+      required:
+        - component_id
+        - owner
+      properties:
+        component_id:
+          title: Name
+          type: string
+          description: Unique name of the component
+          ui:field: EntityNamePicker
+        description:
+          title: Description
+          type: string
+          description: Help others understand what this website is for.
+        owner:
+          title: Owner
+          type: string
+          description: Owner of the component
+          ui:field: OwnerPicker
+          ui:options:
+            allowedKinds:
+              - Group
+ 
+  steps:
+    - id: invoke
+      name: Register
+      action: terraform-invoke
+      input:
+        catalogInfoPath: "/catalog-info.yaml"
+
+  output:
+    links:
+      - title: Open in catalog
+        icon: catalog
+        entityRef: ${{ steps.invoke.output.entityRef }}
