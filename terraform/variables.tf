@@ -1,3 +1,3 @@
 variable "bucketname" {
-  default = "bucket4dev"
+  default = "platformengineeringbucket4dev"
 }
