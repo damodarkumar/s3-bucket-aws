@@ -4,6 +4,6 @@ provider "aws" {
   region  = "eu-north-1"
 }
 
-resource "aws_s3_bucket" "my_bucket" {
+resource "aws_s3_bucket" "03102023s3bucketplatformengineering" {
   bucket = "var.bucketname"
 }
