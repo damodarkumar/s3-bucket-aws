@@ -1,3 +1,3 @@
-variable "ec2_name" {
-  type = string
+variable "bucket_name" {
+  default = "Bucket4Dev"
 }
