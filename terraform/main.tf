@@ -5,7 +5,6 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "platformengineering_bucket" {
-  bucket = "var.bucketname"
   acl    = "private"
 }
 
