@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   annotations:
-    github.com/project-slug: damodarkumar/github-actions-terraform 
+    github.com/project-slug: damodarkumar/s3-bucket-aws
   name: aws-s3-bucket
 spec:
   type: service
