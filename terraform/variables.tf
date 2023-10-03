@@ -1,3 +1,3 @@
 variable "bucketname" {
-  default = "abcdefgh123abcdef12345678"
+  default = "03102023s3bucketplatformengineering"
 }
