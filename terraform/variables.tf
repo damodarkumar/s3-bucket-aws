@@ -1,3 +1,3 @@
-variable "bucket_name" {
+variable "bucketname" {
   default = "bucket4dev"
 }
